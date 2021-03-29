@@ -5,22 +5,16 @@ public class Service {
     public static String Security = "Security";
     public static String Cleaning = "Cleaning";
     public static String Advertisement = "Advertisement";
-    Shop[] shops;
     Employee[] employees;
+    private byte floor;
 
-    public void addShop(Shop shop){
-
+    public void setFloor(byte floor) {
+        if (floor > 0 && floor < 4)
+            this.floor = floor;
     }
 
-    public Shop getShop(String name){
-
+    public byte getFloor() {
+        return floor;
     }
 
-    public Shop[] getShopWithSales(){
-
-    }
-
-    public void makeShopSales(String  name){
-
-    }
 }
