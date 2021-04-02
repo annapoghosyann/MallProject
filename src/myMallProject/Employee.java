@@ -23,6 +23,7 @@ public class Employee {
     }
 
     public void setAge(int age) {
+        if (age>17 && age<71)
         this.age = age;
     }
 
