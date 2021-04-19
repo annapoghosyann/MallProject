@@ -1,4 +1,4 @@
-package myMallProject;
+package model;
 
 public interface Service {
 

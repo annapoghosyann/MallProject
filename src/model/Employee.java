@@ -1,21 +1,21 @@
-package myMallProject;
+package model;
 
 public class Employee {
-    private String name;
+    private String fullName;
     private int age;
 
-    private boolean isMale;
+    private char gender;
     private double salaryInDram;
     private String position;
     private String address;
     private String phoneNumber;
 
-    public String getName() {
-        return name;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
     public int getAge() {
@@ -27,12 +27,13 @@ public class Employee {
         this.age = age;
     }
 
-    public boolean isMale() {
-        return isMale;
+    public char getGender() {
+        return gender;
     }
 
-    public void setMale(boolean male) {
-        isMale = male;
+    public void setGender(char gender) {
+        if (gender == 'f' || gender == 'm')
+        this.gender = gender;
     }
 
     public double getSalaryInDram() {
@@ -40,6 +41,7 @@ public class Employee {
     }
 
     public void setSalaryInDram(double salaryInDram) {
+        if (salaryInDram >= 50000)
         this.salaryInDram = salaryInDram;
     }
 

@@ -1,4 +1,4 @@
-package myMallProject;
+package model;
 
 public class Cleaning implements Service{
 
