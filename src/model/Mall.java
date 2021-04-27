@@ -3,7 +3,6 @@ package model;
 public class Mall {
     private String name;
     private String location;
-    private String taxPayerID;
     private Shop[] shops;
     private Service services;
     private byte floorCount;
@@ -22,14 +21,6 @@ public class Mall {
 
     public void setLocation(String location) {
         this.location = location;
-    }
-
-    public String getTaxPayerID() {
-        return taxPayerID;
-    }
-
-    public void setTaxPayerID(String taxPayerID) {
-        this.taxPayerID = taxPayerID;
     }
 
     public Shop[] getShops() {

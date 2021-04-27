@@ -10,7 +10,7 @@ public class Store extends Shop {
 
     public void printInfo() {
         System.out.println("Store name: " + name);
-        System.out.println("Store type: "+ shopType);
+        System.out.println("Store type: " + shopType);
         System.out.println("Floor: " + floor);
     }
 }
