@@ -1,10 +1,10 @@
-package myMallProject;
+package model;
 
-public class Service {
+public class Security implements Service{
 
-    public static String Security = "Security";
-    public static String Cleaning = "Cleaning";
-    public static String Advertisement = "Advertisement";
+    public String serviceType(){
+        return "This is the Security section!";
+    }
     Employee[] employees;
     private byte floor;
 
@@ -12,9 +12,7 @@ public class Service {
         if (floor > 0 && floor < 4)
             this.floor = floor;
     }
-
     public byte getFloor() {
         return floor;
     }
-
 }
